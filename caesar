@@ -23,12 +23,12 @@ class Caesar:
         else:
             return ''.join([self.decode(char) for char in line])
 
-key = 17
+key = 19
 cipher = Caesar(key)
 line = input()
 while line:
     print(cipher.decode(line))
     line = input()
-    print(cipher.encode(line))
+    '''print(cipher.encode(line))'''
 
 
